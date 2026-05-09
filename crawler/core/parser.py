@@ -98,18 +98,19 @@ class Parser:
         seed_url: str,
         visited:  set[str],
     ) -> list[str]:
-        """
-        Runs every href through the full filtering pipeline.
-        Returns only links that pass all checks.
-        """
-        seen    = set()     # deduplicates within this page's links
+        seen    = set()
         results = []
 
         for href in hrefs:
 
-            # Step 1 — filter non-http schemes before doing anything else
-            if not is_allowed_scheme(href) and not href.startswith("/") \
-                    and not href.startswith("."):
+            # Step 1 — only reject hrefs with an explicit non-HTTP scheme
+            # Plain relative paths (os.html, ./page, ../other) have no scheme
+            # and must pass through to resolution in step 2
+            if href.startswith("#"):
+                continue
+
+            parsed_scheme = href.split(":")[0].lower() if ":" in href else ""
+            if parsed_scheme and parsed_scheme not in ("http", "https"):
                 continue
 
             # Step 2 — resolve relative URLs to absolute
