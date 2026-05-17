@@ -1,5 +1,3 @@
-# crawler/storage/base.py
-
 from abc import ABC, abstractmethod
 
 from crawler.models.result import CrawlResult

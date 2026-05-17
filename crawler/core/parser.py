@@ -1,5 +1,3 @@
-# crawler/core/parser.py
-
 from bs4 import BeautifulSoup
 
 from crawler.utils.logger import get_logger

@@ -1,5 +1,3 @@
-# crawler/config/settings.py
-
 from pathlib import Path
 
 # ── Paths ────────────────────────────────────────────────────────────────────

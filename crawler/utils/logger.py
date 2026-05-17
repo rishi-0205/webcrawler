@@ -1,5 +1,3 @@
-# crawler/utils/logger.py
-
 import logging
 from crawler.config.settings import LOG_LEVEL, LOG_FILE
 

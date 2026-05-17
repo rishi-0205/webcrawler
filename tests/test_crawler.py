@@ -1,5 +1,3 @@
-# tests/test_crawler.py
-
 import asyncio
 import pytest
 from unittest.mock import AsyncMock, MagicMock, patch

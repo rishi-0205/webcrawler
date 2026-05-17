@@ -1,5 +1,3 @@
-# crawler/core/fetcher.py
-
 import asyncio
 import aiohttp
 

@@ -1,5 +1,3 @@
-# crawler/utils/url.py
-
 from urllib.parse import urlparse, urljoin, urlencode, parse_qsl, urlunparse
 
 

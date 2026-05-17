@@ -1,5 +1,3 @@
-# crawler/models/request.py
-
 from dataclasses import dataclass, field
 from crawler.config.settings import (
     REQUEST_TIMEOUT,

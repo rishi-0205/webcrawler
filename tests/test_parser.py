@@ -1,5 +1,3 @@
-# tests/test_parser.py
-
 import pytest
 from crawler.core.parser import Parser
 

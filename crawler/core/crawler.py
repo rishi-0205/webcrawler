@@ -1,5 +1,3 @@
-# crawler/core/crawler.py
-
 import asyncio
 from datetime import datetime, timezone
 

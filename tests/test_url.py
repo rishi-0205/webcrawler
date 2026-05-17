@@ -1,5 +1,3 @@
-# tests/test_url.py
-
 import pytest
 from crawler.utils.url import (
     is_allowed_scheme,

@@ -1,5 +1,3 @@
-# crawler/core/robots.py
-
 import asyncio
 from datetime import datetime, timezone
 from urllib.robotparser import RobotFileParser

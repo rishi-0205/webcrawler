@@ -1,5 +1,3 @@
-# crawler/storage/json_storage.py
-
 import json
 import re
 from datetime import datetime, timezone
